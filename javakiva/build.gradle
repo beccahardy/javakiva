@@ -1,0 +1,34 @@
+apply plugin: 'java'
+
+sourceSets {
+   main {
+      java {
+        //srcDir 'src'  //TODO COMMENTED OUT UNTIL THE JSON DEPENDENCIES ARE UPDATED
+      }
+    }
+    test {
+      java {
+        srcDir 'test/src'
+       }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	//compile 'foo;var:version'  //http://mvnrepository.com/
+    testCompile 'junit:junit:4.10'
+}
+/*
+test {
+	
+	include '**'
+	
+	testLogging.showStandardStreams = true
+
+	beforeTest { descriptor ->
+    	logger.lifecycle("Running test: " + descriptor)
+  	}
+}*/
