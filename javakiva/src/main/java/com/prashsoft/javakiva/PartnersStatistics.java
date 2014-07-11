@@ -1,11 +1,9 @@
 package com.prashsoft.javakiva;
 
-
-// Average number of comments or recommendations on journal entries
-//Aggregate by cumulative, year, quarter, month, week, day, hour
-
-public class JournalEntriesStatistics {
-
+/**
+ * Created by becca on 7/10/14.
+ */
+public class PartnersStatistics {
     //The page position of results to return.
     public int page;
 
@@ -21,20 +19,11 @@ public class JournalEntriesStatistics {
     //Period of granularity to section the data. One of:cumulative,year,quarter,month,week,day,hour
     public String period;
 
-    //Required.Statistic to return. One of:average_comments,average_recommendations
+    //Required.Statistic to return. One of count, countries
     public String stat_name;
 
     // Argument to aggregate results by. One of: partner_id
     public String aggregate;
 
-    // partner_id(number) Partner ID to limit results by
-    public int partnerID;
-
-    //One of:true,false
-    public boolean is_rate_eligible;
-
-
-
-
+    public boolean isCurrentPartner;
 }
-
