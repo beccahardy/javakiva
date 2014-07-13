@@ -3,6 +3,9 @@ package com.prashsoft.javakiva;
 import com.prashsoft.javakiva.datafetchers.StatsFetcher;
 import org.junit.Test;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by becca on 7/9/14.
  */
@@ -13,8 +16,8 @@ public class StatisticsTest {
         StatsFetcher fetcher = new StatsFetcher();
         JournalEntriesStatistics query = new JournalEntriesStatistics();
         query.stat_name = "average_comments";
-        query.period = "cumulative";
-        String result = fetcher.fetchJournalEntries(query);
+        query.period = "month";
+        List<Map<String, String>> result = fetcher.fetchJournalEntries(query);
         System.out.println(result);
 
     }
@@ -25,7 +28,7 @@ public class StatisticsTest {
         JournalEntriesStatistics query = new JournalEntriesStatistics();
         query.stat_name = "average_recommendations";
         query.period = "cumulative";
-        String result = fetcher.fetchJournalEntries(query);
+        List<Map<String, String>> result = fetcher.fetchJournalEntries(query);
         System.out.println(result);
 
 
@@ -56,7 +59,7 @@ public class StatisticsTest {
         StatsFetcher fetcher = new StatsFetcher();
         PartnersStatistics query = new PartnersStatistics();
         query.stat_name = "count";
-        query.period = "cumulative";
+        query.period = "month";
         String result = fetcher.fetchPartners(query);
         System.out.println(result);
     }

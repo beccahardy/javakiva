@@ -23,11 +23,11 @@
 
 package com.prashsoft.javakiva;
 
+import org.apache.commons.httpclient.util.DateUtil;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.commons.httpclient.util.DateUtil;
 
 public class Loan {
 
