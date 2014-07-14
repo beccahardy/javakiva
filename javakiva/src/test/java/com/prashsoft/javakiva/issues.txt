@@ -1,135 +1,28 @@
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/Loan.java:26: error: package org.apache.http.client.util does not exist
-import org.apache.http.client.util.DateUtil;
-                                  ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/KivaUtil.java:38: error: package org.apache.http.client does not exist
-import org.apache.http.client.DefaultHttpMethodRetryHandler;
-                             ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:3: error: package com.fasterxml.jackson.core does not exist
-import com.fasterxml.jackson.core.JsonFactory;
-                                 ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:4: error: package com.fasterxml.jackson.core.type does not exist
-import com.fasterxml.jackson.core.type.TypeReference;
-                                      ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:5: error: package com.fasterxml.jackson.databind does not exist
-import com.fasterxml.jackson.databind.ObjectMapper;
-                                     ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:7: error: package javax.ws.rs.client does not exist
-import javax.ws.rs.client.Client;
-                         ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:8: error: package javax.ws.rs.client does not exist
-import javax.ws.rs.client.ClientBuilder;
-                         ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:9: error: package javax.ws.rs.client does not exist
-import javax.ws.rs.client.WebTarget;
-                         ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:10: error: package javax.ws.rs.core does not exist
-import javax.ws.rs.core.Response;
-                       ^
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:20: error: cannot find symbol
-    JsonFactory factory = new JsonFactory();
-    ^
-  symbol:   class JsonFactory
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:21: error: cannot find symbol
-    ObjectMapper mapper = new ObjectMapper(factory);
-    ^
-  symbol:   class ObjectMapper
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:22: error: cannot find symbol
-    TypeReference<List<Map<String, String>>> typeRef
-    ^
-  symbol:   class TypeReference
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:25: error: cannot find symbol
-    Client client = ClientBuilder.newClient();
-    ^
-  symbol:   class Client
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/Loan.java:1042: error: cannot find symbol
-                + (postedDate == null ? "" : DateUtil.formatDate(postedDate))
-                                             ^
-  symbol:   variable DateUtil
-  location: class Loan
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/Loan.java:1045: error: cannot find symbol
-                + (fundedDate == null ? "" : DateUtil.formatDate(fundedDate))
-                                             ^
-  symbol:   variable DateUtil
-  location: class Loan
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/KivaUtil.java:86: error: cannot find symbol
-        method.getParams().setParameter(HttpMethodParams.RETRY_HANDLER, new DefaultHttpMethodRetryHandler(3, false));
-                                                                            ^
-  symbol:   class DefaultHttpMethodRetryHandler
-  location: class KivaUtil
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:20: error: cannot find symbol
-    JsonFactory factory = new JsonFactory();
-                              ^
-  symbol:   class JsonFactory
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:21: error: cannot find symbol
-    ObjectMapper mapper = new ObjectMapper(factory);
-                              ^
-  symbol:   class ObjectMapper
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:23: error: cannot find symbol
-            = new TypeReference<List<Map<String, String>>>() {};
-                  ^
-  symbol:   class TypeReference
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:25: error: cannot find symbol
-    Client client = ClientBuilder.newClient();
-                    ^
-  symbol:   variable ClientBuilder
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:30: error: cannot find symbol
-        WebTarget target = client.target("http://api.kivaws.org/v1/statistics/journal_entries/"
-        ^
-  symbol:   class WebTarget
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:33: error: cannot find symbol
-        Response response = target.request().get();
-        ^
-  symbol:   class Response
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:44: error: cannot find symbol
-        WebTarget target = client.target("http://api.kivaws.org/v1/statistics/lenders/"
-        ^
-  symbol:   class WebTarget
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:47: error: cannot find symbol
-        Response response = target.request().get();
-        ^
-  symbol:   class Response
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:54: error: cannot find symbol
-        WebTarget target = client.target("http://api.kivaws.org/v1/statistics/loans/"
-        ^
-  symbol:   class WebTarget
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:57: error: cannot find symbol
-        Response response = target.request().get();
-        ^
-  symbol:   class Response
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:64: error: cannot find symbol
-        WebTarget target = client.target("http://api.kivaws.org/v1/statistics/partners/"
-        ^
-  symbol:   class WebTarget
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:67: error: cannot find symbol
-        Response response = target.request().get();
-        ^
-  symbol:   class Response
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:74: error: cannot find symbol
-        WebTarget target = client.target("http://api.kivaws.org/v1/statistics/teams/"
-        ^
-  symbol:   class WebTarget
-  location: class StatsFetcher
-/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:77: error: cannot find symbol
-        Response response = target.request().get();
-        ^
-  symbol:   class Response
-  location: class StatsFetcher
+/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:34: error: cannot find symbol
+        String value = response.readEntity(String.class);
+                               ^
+  symbol:   method readEntity(Class<String>)
+  location: variable response of type Response
+/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:48: error: cannot find symbol
+        String value = response.readEntity(String.class);
+                               ^
+  symbol:   method readEntity(Class<String>)
+  location: variable response of type Response
+/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:58: error: cannot find symbol
+        String value = response.readEntity(String.class);
+                               ^
+  symbol:   method readEntity(Class<String>)
+  location: variable response of type Response
+/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:68: error: cannot find symbol
+        String value = response.readEntity(String.class);
+                               ^
+  symbol:   method readEntity(Class<String>)
+  location: variable response of type Response
+/home/chrislowe/repos/javakiva/javakiva/src/main/java/com/prashsoft/javakiva/datafetchers/StatsFetcher.java:78: error: cannot find symbol
+        String value = response.readEntity(String.class);
+                               ^
+  symbol:   method readEntity(Class<String>)
+  location: variable response of type Response
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
-30 errors
+5 errors
