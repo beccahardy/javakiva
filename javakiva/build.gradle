@@ -1,9 +1,10 @@
 apply plugin: 'java'
 
+/* Likely broken
 sourceSets {
    main {
       java {
-        //srcDir 'src'  //TODO COMMENTED OUT UNTIL THE JSON DEPENDENCIES ARE UPDATED
+        //srcDir 'src'  //TODO COMMENTED OUT UNTIL THE JSON-LIB DEPENDENCIES ARE UPDATED
       }
     }
     test {
@@ -11,16 +12,21 @@ sourceSets {
         srcDir 'test/src'
        }
     }
-}
+}*/
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-	//compile 'foo;var:version'  //http://mvnrepository.com/
-    testCompile 'junit:junit:4.10'
+  compile 'net.sf.json-lib:json-lib:2.4:jdk15' 
+  //compile 'net.sf.json-lib:json-lib:2.4' //Could not resolve all dependencies for configuration ':compile'.> Artifact //'net.sf.json-lib:json-lib:2.4@jar' not found.
+	compile 'commons-beanutils:commons-beanutils:1.9.2'
+	//compile 'org.apache.httpcomponents:httpclient:4.3.4' //Refers to the new HTTP Client Interface from Apache
+  compile'commons-httpclient:commons-httpclient:3.1'
+  testCompile 'junit:junit:4.10'
 }
+
 /*
 test {
 	

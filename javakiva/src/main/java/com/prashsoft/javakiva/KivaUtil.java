@@ -35,7 +35,7 @@ import java.util.Date;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.beanutils.PropertyUtils;
-import org.apache.commons.httpclient.DefaultHttpMethodRetryHandler;
+import org.apache.http.client.DefaultHttpMethodRetryHandler;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
