@@ -4,11 +4,11 @@ import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.prashsoft.javakiva.*;
+
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.Response;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -21,7 +21,8 @@ public class StatsFetcher {
     JsonFactory factory = new JsonFactory();
     ObjectMapper mapper = new ObjectMapper(factory);
     TypeReference<List<Map<String, String>>> typeRef
-            = new TypeReference<List<Map<String, String>>>() {};
+            = new TypeReference<List<Map<String, String>>>() {
+    };
 
     Client client = ClientBuilder.newClient();
 
@@ -61,7 +62,7 @@ public class StatsFetcher {
     }
 
     //Partners Fetcher
-    public String fetchPartners (PartnersStatistics queryParams) throws Exception {
+    public String fetchPartners(PartnersStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/partners/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period);
@@ -71,7 +72,7 @@ public class StatsFetcher {
     }
 
     //Teams Fetcher
-    public String fetchTeams (TeamsStatistics queryParams) throws Exception {
+    public String fetchTeams(TeamsStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/teams/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period + "&team_id=" + queryParams.teamID);
