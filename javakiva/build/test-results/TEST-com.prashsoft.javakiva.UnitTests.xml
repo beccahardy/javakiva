@@ -1,0 +1,158 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.prashsoft.javakiva.UnitTests" tests="3" failures="1" errors="0" timestamp="2014-07-15T19:41:37" hostname="oneiroi" time="0.894">
+  <properties/>
+  <testcase name="testAssertTrueIsNotFalse" classname="com.prashsoft.javakiva.UnitTests" time="0.001"/>
+  <testcase name="testAssertTrueIsTrue" classname="com.prashsoft.javakiva.UnitTests" time="0.0"/>
+  <testcase name="testLoanDetails" classname="com.prashsoft.javakiva.UnitTests" time="0.892">
+    <failure message="junit.framework.AssertionFailedError: Get Loan Details expected:&lt;[ Activity: Fishing&#10; Basket Amount: &#10; Funded Amount: 425.0&#10; Id: 55781&#10; Image: http://www.kiva.org/img/w800/179190.jpg&#10; Loan Amount: 425.0&#10; Loan Description: null&#10;Location: &#10;Country Code: MZ&#10;Country: Mozambique&#10;Town: Catembe, Maputo&#10;Geo Level: town&#10;Geo Pairs: -26.009167 32.566667&#10;Geo Type: point&#10;&#10; Name: Albertina&#10; Paid Amount: 425.0&#10; Posted Date: Sat, 12 Jul 2008 23:20:18 GMT&#10; Funded Date: Sun, 13 Jul 2008 01:53:27 GMT&#10; Raised Amount: &#10; Sector: Food&#10; Status: paid&#10; Partner Id: 23&#10; Use: To buy wood to repair her boat&#10; Borrowers: &#10;Borrower Id: null&#10;Borrower First Name: Albertina&#10;Borrower Last Name: &#10;Borrower Gender: F&#10;Borrower Pictured: true&#10;Terms: &#10;Disbursal Amount: 10000.0&#10;Disbursal Currency: MZN&#10; Local Payments: Due Date: Tue Aug 26 07:00:00 CDT 2008&#10; Local Payments: Amount: 625.0&#10; Scheduled Payments: Due Date: Thu Oct 16 07:00:00 CDT 2008&#10; Scheduled Payments: Amount: 26.56&#10;Disbursal Date: Sat Jul 26 20:53:27 CDT 2008&#10;Loan Amount: 425.0&#10;Loss Liability: Non Payment: partner&#10;Loss Liability: Currency Exchange: partner&#10; Payments: &#10;Payment Id: 296559&#10;Payment Amount: 27.0&#10;Payment Local Amount: 635.29&#10;Payment Processed Date: Fri Aug 15 09:00:01 CDT 2008&#10;Payment Settlement Date: Fri Aug 29 05:14:53 CDT 2008&#10;Payment Comment: scheduled_repayment&#10;Payment Rounded Local Amount: 642.6&#10;Posted Date: Sat Jul 12 18:20:18 CDT 2008&#10;Funded Date: Sat Jul 12 20:53:27 CDT 2008&#10;Journal Totals: Entries: 0&#10;Journal Totals: Bulk Entries: null]&gt; but was:&lt;[ Activity: Fishing&#10; Basket Amount: &#10; Funded Amount: 425.0&#10; Id: 55781&#10; Image: http://www.kiva.org/img/w800/179190.jpg&#10; Loan Amount: 425.0&#10; Loan Description: null&#10;Location: &#10;Country Code: MZ&#10;Country: Mozambique&#10;Town: Catembe, Maputo&#10;Geo Level: town&#10;Geo Pairs: -26.009167 32.566667&#10;Geo Type: point&#10;&#10; Name: Albertina&#10; Paid Amount: 425.0&#10; Posted Date: Sat, 12 Jul 2008 23:20:18 GMT&#10; Funded Date: Sun, 13 Jul 2008 01:53:27 GMT&#10; Raised Amount: &#10; Sector: Food&#10; Status: paid&#10; Partner Id: 23&#10; Use: To buy wood to repair her boat&#10; Borrowers: &#10;Borrower Id: null&#10;Borrower First Name: Albertina&#10;Borrower Last Name: &#10;Borrower Gender: F&#10;Borrower Pictured: true&#10;Terms: &#10;Disbursal Amount: 10000.0&#10;Disbursal Currency: MZN&#10; Local Payments: Due Date: Tue Aug 26 07:00:00 CDT 2008&#10; Local Payments: Amount: 625.0&#10; Scheduled Payments: Due Date: Thu Oct 16 07:00:00 CDT 2008&#10; Scheduled Payments: Amount: 26.56&#10;Disbursal Date: Sat Jul 26 20:53:27 CDT 2008&#10;Loan Amount: 425.0&#10;Loss Liability: Non Payment: partner&#10;Loss Liability: Currency Exchange: partner&#10; Payments: &#10;Payment Id: 296559&#10;Payment Amount: 27.0&#10;Payment Local Amount: 635.29&#10;Payment Processed Date: Fri Aug 15 09:00:01 CDT 2008&#10;Payment Settlement Date: Fri Aug 29 05:14:53 CDT 2008&#10;Payment Comment: scheduled_repayment&#10;Payment Rounded Local Amount: 642.6&#10;Posted Date: Sat Jul 12 18:20:18 CDT 2008&#10;Funded Date: Sat Jul 12 20:53:27 CDT 2008&#10;Journal Totals: Entries: 0&#10;Journal Totals: Bulk Entries: null]&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Get Loan Details expected:&lt;[ Activity: Fishing
+ Basket Amount: 
+ Funded Amount: 425.0
+ Id: 55781
+ Image: http://www.kiva.org/img/w800/179190.jpg
+ Loan Amount: 425.0
+ Loan Description: null
+Location: 
+Country Code: MZ
+Country: Mozambique
+Town: Catembe, Maputo
+Geo Level: town
+Geo Pairs: -26.009167 32.566667
+Geo Type: point
+
+ Name: Albertina
+ Paid Amount: 425.0
+ Posted Date: Sat, 12 Jul 2008 23:20:18 GMT
+ Funded Date: Sun, 13 Jul 2008 01:53:27 GMT
+ Raised Amount: 
+ Sector: Food
+ Status: paid
+ Partner Id: 23
+ Use: To buy wood to repair her boat
+ Borrowers: 
+Borrower Id: null
+Borrower First Name: Albertina
+Borrower Last Name: 
+Borrower Gender: F
+Borrower Pictured: true
+Terms: 
+Disbursal Amount: 10000.0
+Disbursal Currency: MZN
+ Local Payments: Due Date: Tue Aug 26 07:00:00 CDT 2008
+ Local Payments: Amount: 625.0
+ Scheduled Payments: Due Date: Thu Oct 16 07:00:00 CDT 2008
+ Scheduled Payments: Amount: 26.56
+Disbursal Date: Sat Jul 26 20:53:27 CDT 2008
+Loan Amount: 425.0
+Loss Liability: Non Payment: partner
+Loss Liability: Currency Exchange: partner
+ Payments: 
+Payment Id: 296559
+Payment Amount: 27.0
+Payment Local Amount: 635.29
+Payment Processed Date: Fri Aug 15 09:00:01 CDT 2008
+Payment Settlement Date: Fri Aug 29 05:14:53 CDT 2008
+Payment Comment: scheduled_repayment
+Payment Rounded Local Amount: 642.6
+Posted Date: Sat Jul 12 18:20:18 CDT 2008
+Funded Date: Sat Jul 12 20:53:27 CDT 2008
+Journal Totals: Entries: 0
+Journal Totals: Bulk Entries: null]&gt; but was:&lt;[ Activity: Fishing
+ Basket Amount: 
+ Funded Amount: 425.0
+ Id: 55781
+ Image: http://www.kiva.org/img/w800/179190.jpg
+ Loan Amount: 425.0
+ Loan Description: null
+Location: 
+Country Code: MZ
+Country: Mozambique
+Town: Catembe, Maputo
+Geo Level: town
+Geo Pairs: -26.009167 32.566667
+Geo Type: point
+
+ Name: Albertina
+ Paid Amount: 425.0
+ Posted Date: Sat, 12 Jul 2008 23:20:18 GMT
+ Funded Date: Sun, 13 Jul 2008 01:53:27 GMT
+ Raised Amount: 
+ Sector: Food
+ Status: paid
+ Partner Id: 23
+ Use: To buy wood to repair her boat
+ Borrowers: 
+Borrower Id: null
+Borrower First Name: Albertina
+Borrower Last Name: 
+Borrower Gender: F
+Borrower Pictured: true
+Terms: 
+Disbursal Amount: 10000.0
+Disbursal Currency: MZN
+ Local Payments: Due Date: Tue Aug 26 07:00:00 CDT 2008
+ Local Payments: Amount: 625.0
+ Scheduled Payments: Due Date: Thu Oct 16 07:00:00 CDT 2008
+ Scheduled Payments: Amount: 26.56
+Disbursal Date: Sat Jul 26 20:53:27 CDT 2008
+Loan Amount: 425.0
+Loss Liability: Non Payment: partner
+Loss Liability: Currency Exchange: partner
+ Payments: 
+Payment Id: 296559
+Payment Amount: 27.0
+Payment Local Amount: 635.29
+Payment Processed Date: Fri Aug 15 09:00:01 CDT 2008
+Payment Settlement Date: Fri Aug 29 05:14:53 CDT 2008
+Payment Comment: scheduled_repayment
+Payment Rounded Local Amount: 642.6
+Posted Date: Sat Jul 12 18:20:18 CDT 2008
+Funded Date: Sat Jul 12 20:53:27 CDT 2008
+Journal Totals: Entries: 0
+Journal Totals: Bulk Entries: null]&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at com.prashsoft.javakiva.UnitTests.testLoanDetails(UnitTests.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:55)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:42)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:71)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:355)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

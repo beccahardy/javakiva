@@ -1,19 +1,5 @@
 apply plugin: 'java'
 
-/* Likely broken
-//sourceSets {
-//  main {
-//      java {
-//       //srcDir 'src'  //TODO COMMENTED OUT UNTIL THE JSON-LIB DEPENDENCIES ARE UPDATED
-//      }
-//    }
-//    test {
-//      java {
-//        srcDir 'test/src'
-//       }
-//    }
-//}*/
-
 repositories {
     mavenCentral()
 }
@@ -21,7 +7,6 @@ repositories {
 dependencies {
   compile 'net.sf.json-lib:json-lib:2.4:jdk15' 
 	compile 'commons-beanutils:commons-beanutils:1.9.2'
-	//compile 'org.apache.httpcomponents:httpclient:4.3.4' //Refers to the new HTTP Client Interface from Apache
   compile 'com.fasterxml.jackson.core:jackson-core:2.4.1.1'
   compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1.2'
   compile'commons-httpclient:commons-httpclient:3.1'
@@ -30,15 +15,3 @@ dependencies {
 
   testCompile 'junit:junit:4.10'
 }
-
-/*
-test {
-	
-	include '**'
-	
-	testLogging.showStandardStreams = true
-
-	beforeTest { descriptor ->
-    	logger.lifecycle("Running test: " + descriptor)
-  	}
-}*/

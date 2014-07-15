@@ -15,6 +15,7 @@ import java.util.Map;
 /**
  * Created by becca on 7/9/14.
  */
+
 public class StatsFetcher {
 
     JsonFactory factory = new JsonFactory();
