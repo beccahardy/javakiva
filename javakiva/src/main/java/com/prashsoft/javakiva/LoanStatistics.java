@@ -1,7 +1,7 @@
 package com.prashsoft.javakiva;
 
 /**
- * Created by becca on 7/10/14.
+ * @author becca@bhardy.net on 7/10/14.
  */
 public class LoanStatistics {
     //The page position of results to return.

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by becca on 7/9/14.
+ * @author becca@bhardy.net on 7/9/14.
  */
 
 public class StatsFetcher {
