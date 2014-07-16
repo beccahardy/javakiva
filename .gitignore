@@ -1,1 +1,11 @@
 /javakiva/src/test/java/com/prashsoft/javakiva/TODOs.txt
+/javakiva/bin/
+/javakiva/target/
+/javakiva/build/
+.DS_Store
+javakiva/.classpath
+javakiva/.gitignore
+javakiva/.idea/
+javakiva/.project
+javakiva/.settings/
+javakiva/mykivaproject.iml
