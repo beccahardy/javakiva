@@ -4,14 +4,15 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-  compile 'net.sf.json-lib:json-lib:2.4:jdk15' 
-	compile 'commons-beanutils:commons-beanutils:1.9.2'
-  compile 'com.fasterxml.jackson.core:jackson-core:2.4.1.1'
-  compile 'com.fasterxml.jackson.core:jackson-databind:2.4.1.2'
-  compile'commons-httpclient:commons-httpclient:3.1'
-  compile 'javax.ws.rs:jsr311-api:1.1.1'
-  compile 'org.glassfish.jersey.core:jersey-client:2.4.1' //Required for javax.ws.rs
 
-  testCompile 'junit:junit:4.10'
+dependencies {
+    compile 'net.sf.json-lib:json-lib:2.4:jdk15'
+    compile 'commons-beanutils:commons-beanutils:1.9.2'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.3.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.3.3'
+    compile 'commons-httpclient:commons-httpclient:3.1'
+    compile 'org.jboss.resteasy:resteasy-client:3.0.8.Final'
+
+    testCompile 'junit:junit:4.11'
+
 }
