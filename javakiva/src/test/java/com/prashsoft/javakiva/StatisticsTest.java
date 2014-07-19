@@ -6,6 +6,8 @@ import org.junit.Test;
 import java.util.List;
 import java.util.Map;
 
+import static org.junit.Assert.assertTrue;
+
 /**
  * @author becca@bhardy.net on 7/9/14.
  */
@@ -15,21 +17,22 @@ public class StatisticsTest {
     public void testJournalEntriesCommentsYear() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         JournalEntriesStatistics query = new JournalEntriesStatistics();
-        query.stat_name = "average_comments";
-        query.period = "month";
+        query.setStatName("average_comments");
+        query.setPeriod("month");
         List<Map<String, String>> result = fetcher.fetchJournalEntries(query);
-        System.out.println(result);
-
+        System.out.println("Average Journal Entries Comments by Month: " + result);
+        assertTrue(result.size() >= 1);
     }
 
     @Test
     public void testJournalEntriesRecommendationsMonth() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         JournalEntriesStatistics query = new JournalEntriesStatistics();
-        query.stat_name = "average_recommendations";
-        query.period = "cumulative";
+        query.setStatName("average_recommendations");
+        query.setPeriod("cumulative");
         List<Map<String, String>> result = fetcher.fetchJournalEntries(query);
-        System.out.println(result);
+        System.out.println("Average Journal Entries Recommendations, Cumulative: " + result);
+        assertTrue(result.size() >= 1);
 
 
     }
@@ -38,41 +41,45 @@ public class StatisticsTest {
     public void testLenders() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         LendersStatistics query = new LendersStatistics();
-        query.stat_name = "count_lenders";
-        query.period = "cumulative";
+        query.setStatName("count_lenders");
+        query.setPeriod("cumulative");
         List<Map<String, String>> result = fetcher.fetchLenders(query);
-        System.out.println(result);
+        System.out.println("Number of Lenders, Cumulative: " + result);
+        assertTrue(result.size() >= 1);
     }
 
     @Test
     public void testLoans() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         LoanStatistics query = new LoanStatistics();
-        query.stat_name = "count";
-        query.period = "cumulative";
+        query.setStatName("count");
+        query.setPeriod("cumulative");
         List<Map<String, String>> result = fetcher.fetchLoans(query);
-        System.out.println(result);
+        System.out.println("Count of Loans, Cumulative: " + result);
+        assertTrue(result.size() >= 1);
     }
 
     @Test
     public void testPartners() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         PartnersStatistics query = new PartnersStatistics();
-        query.stat_name = "count";
-        query.period = "month";
+        query.setStatName("count");
+        query.setPeriod("month");
         List<Map<String, String>> result = fetcher.fetchPartners(query);
-        System.out.println(result);
+        System.out.println("Count of Partners by Month: " + result);
+        assertTrue(result.size() >= 1);
     }
 
     @Test
     public void testTeams() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
         TeamsStatistics query = new TeamsStatistics();
-        query.stat_name = "total_members";
-        query.teamID = 100;
-        query.period = "cumulative";
+        query.setStatName("total_members");
+        query.setTeamID(100);
+        query.setPeriod("month");
         List<Map<String, String>> result = fetcher.fetchTeams(query);
-        System.out.println(result);
+        System.out.println("Total Members by Team, by Month: " + result);
+        assertTrue(result.size() >= 1);
     }
 
 }
