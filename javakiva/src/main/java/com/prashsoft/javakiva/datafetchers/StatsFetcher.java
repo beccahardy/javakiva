@@ -37,48 +37,51 @@ public class StatsFetcher {
         List<Map<String, String>> result = mapper.readValue(value, typeRef);
         return result;
 
-
     }
 
 
     //Lenders Fetcher
-    public String fetchLenders(LendersStatistics queryParams) throws Exception {
+    public List<Map<String, String>> fetchLenders(LendersStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/lenders/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period);
         Response response = target.request().get();
         String value = response.readEntity(String.class);
-        return value;
+        List<Map<String, String>> result = mapper.readValue(value, typeRef);
+        return result;
     }
 
     //Loans Fetcher
-    public String fetchLoans(LoanStatistics queryParams) throws Exception {
+    public List<Map<String, String>> fetchLoans(LoanStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/loans/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period);
         Response response = target.request().get();
         String value = response.readEntity(String.class);
-        return value;
+        List<Map<String, String>> result = mapper.readValue(value, typeRef);
+        return result;
     }
 
     //Partners Fetcher
-    public String fetchPartners(PartnersStatistics queryParams) throws Exception {
+    public List<Map<String, String>> fetchPartners(PartnersStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/partners/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period);
         Response response = target.request().get();
         String value = response.readEntity(String.class);
-        return value;
+        List<Map<String, String>> result = mapper.readValue(value, typeRef);
+        return result;
     }
 
     //Teams Fetcher
-    public String fetchTeams(TeamsStatistics queryParams) throws Exception {
+    public List<Map<String, String>> fetchTeams(TeamsStatistics queryParams) throws Exception {
         WebTarget target = client.target("http://api.kivaws.org/v1/statistics/teams/"
                 + queryParams.stat_name + ".json?period="
                 + queryParams.period + "&team_id=" + queryParams.teamID);
         Response response = target.request().get();
         String value = response.readEntity(String.class);
-        return value;
+        List<Map<String, String>> result = mapper.readValue(value, typeRef);
+        return result;
     }
 
 }

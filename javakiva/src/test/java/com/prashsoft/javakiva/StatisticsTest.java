@@ -40,7 +40,7 @@ public class StatisticsTest {
         LendersStatistics query = new LendersStatistics();
         query.stat_name = "count_lenders";
         query.period = "cumulative";
-        String result = fetcher.fetchLenders(query);
+        List<Map<String, String>> result = fetcher.fetchLenders(query);
         System.out.println(result);
     }
 
@@ -50,7 +50,7 @@ public class StatisticsTest {
         LoanStatistics query = new LoanStatistics();
         query.stat_name = "count";
         query.period = "cumulative";
-        String result = fetcher.fetchLoans(query);
+        List<Map<String, String>> result = fetcher.fetchLoans(query);
         System.out.println(result);
     }
 
@@ -60,7 +60,7 @@ public class StatisticsTest {
         PartnersStatistics query = new PartnersStatistics();
         query.stat_name = "count";
         query.period = "month";
-        String result = fetcher.fetchPartners(query);
+        List<Map<String, String>> result = fetcher.fetchPartners(query);
         System.out.println(result);
     }
 
@@ -71,7 +71,7 @@ public class StatisticsTest {
         query.stat_name = "total_members";
         query.teamID = 100;
         query.period = "cumulative";
-        String result = fetcher.fetchTeams(query);
+        List<Map<String, String>> result = fetcher.fetchTeams(query);
         System.out.println(result);
     }
 
