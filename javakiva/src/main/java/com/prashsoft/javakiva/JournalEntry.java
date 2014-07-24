@@ -234,12 +234,12 @@ public class JournalEntry {
      */
     @Override
     public String toString() {
-        return "" + " Jounral Entry Author: " + (author == null ? "" : author) + "\n" + " Jounral Entry Body: "
-                + (body == null ? "" : body) + "\n" + " Jounral Entry Bulk: " + (bulk == null ? "" : bulk) + "\n"
-                + " Jounral Entry Comment Count: " + (commentCount == null ? "" : commentCount) + "\n"
-                + " Jounral Entry Date: " + (date == null ? "" : date) + "\n" + " Jounral Entry Id: "
-                + (id == null ? "" : id) + "\n" + " Jounral Entry Recommendation Count: "
-                + (recommendationCount == null ? "" : recommendationCount) + "\n" + " Jounral Entry Subject: "
+        return "" + " Journal Entry Author: " + (author == null ? "" : author) + "\n" + " Journal Entry Body: "
+                + (body == null ? "" : body) + "\n" + " Journal Entry Bulk: " + (bulk == null ? "" : bulk) + "\n"
+                + " Journal Entry Comment Count: " + (commentCount == null ? "" : commentCount) + "\n"
+                + " Journal Entry Date: " + (date == null ? "" : date) + "\n" + " Journal Entry Id: "
+                + (id == null ? "" : id) + "\n" + " Journal Entry Recommendation Count: "
+                + (recommendationCount == null ? "" : recommendationCount) + "\n" + " Journal Entry Subject: "
                 + (subject == null ? "" : subject) + "\n";
 
     }
