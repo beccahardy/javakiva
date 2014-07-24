@@ -12,7 +12,6 @@ import static org.junit.Assert.assertTrue;
  * @author becca@bhardy.net on 7/9/14.
  */
 public class StatisticsTest {
-/* COMMENTED OUT TO PREVENT RATE LIMITING BY KIVA'S API
     @Test
     public void testJournalEntriesCommentsYear() throws Exception {
         StatsFetcher fetcher = new StatsFetcher();
@@ -81,5 +80,4 @@ public class StatisticsTest {
         System.out.println("Total Members by Team, by Month: " + result);
         assertTrue(result.size() >= 1);
     }
-*/
 }

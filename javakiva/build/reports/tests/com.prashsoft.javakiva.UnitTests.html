@@ -21,17 +21,17 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">3</div>
+<div class="counter">9</div>
 <p>tests</p>
 </div>
 </td><td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">5</div>
 <p>failures</p>
 </div>
 </td><td>
 <div class="infoBox" id="duration">
-<div class="counter">21.299s</div>
+<div class="counter">28.134s</div>
 <p>duration</p>
 </div>
 </td>
@@ -40,7 +40,7 @@
 </div>
 </td><td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">66%</div>
+<div class="percent">44%</div>
 <p>successful</p>
 </div>
 </td>
@@ -55,6 +55,12 @@
 <li>
 <a href="#tab1">Tests</a>
 </li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
 </ul>
 <div class="tab" id="tab0">
 <h2>Failed tests</h2>
@@ -62,9 +68,217 @@
 <a name="testGetLendersByParams"></a>
 <h3 class="failures">testGetLendersByParams</h3>
 <span class="code">
+<pre>java.lang.IllegalArgumentException: No bean specified
+	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
+	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
+	at com.prashsoft.javakiva.LenderUtil.getLendersFromBean(LenderUtil.java:130)
+	at com.prashsoft.javakiva.LenderUtil.getLendersByParams(LenderUtil.java:88)
+	at com.prashsoft.javakiva.UnitTests.testGetLendersByParams(UnitTests.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:55)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:42)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:71)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:355)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGetLoansByParams"></a>
+<h3 class="failures">testGetLoansByParams</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: No bean specified
+	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
+	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
+	at com.prashsoft.javakiva.LoanUtil.getLoansFromBean(LoanUtil.java:450)
+	at com.prashsoft.javakiva.LoanUtil.getLoansByParams(LoanUtil.java:407)
+	at com.prashsoft.javakiva.UnitTests.testGetLoansByParams(UnitTests.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:55)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:42)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:71)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:355)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGetNewestLenders"></a>
+<h3 class="failures">testGetNewestLenders</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: No bean specified
+	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
+	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
+	at com.prashsoft.javakiva.LenderUtil.getLendersDetails(LenderUtil.java:102)
+	at com.prashsoft.javakiva.LenderUtil.getLendersDetails(LenderUtil.java:125)
+	at com.prashsoft.javakiva.LenderUtil.getLenderDetails(LenderUtil.java:76)
+	at com.prashsoft.javakiva.LenderUtil.getLendersFromBean(LenderUtil.java:153)
+	at com.prashsoft.javakiva.LenderUtil.getNewestLenders(LenderUtil.java:172)
+	at com.prashsoft.javakiva.LenderUtil.getNewestLenders(LenderUtil.java:161)
+	at com.prashsoft.javakiva.UnitTests.testGetNewestLenders(UnitTests.java:159)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:55)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:42)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:71)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:355)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGetNewestLoans"></a>
+<h3 class="failures">testGetNewestLoans</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: No bean specified
+	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
+	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
+	at com.prashsoft.javakiva.LoanUtil.getLoansFromBean(LoanUtil.java:450)
+	at com.prashsoft.javakiva.LoanUtil.getNewestLoans(LoanUtil.java:543)
+	at com.prashsoft.javakiva.LoanUtil.getNewestLoans(LoanUtil.java:532)
+	at com.prashsoft.javakiva.UnitTests.testGetNewestLoans(UnitTests.java:165)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:55)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:42)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:71)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:103)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.messaging.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.messaging.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:355)
+	at org.gradle.internal.concurrent.DefaultExecutorFactory$StoppableExecutorImpl$1.run(DefaultExecutorFactory.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testLoansDetails"></a>
+<h3 class="failures">testLoansDetails</h3>
+<span class="code">
 <pre>java.lang.NullPointerException
-	at com.prashsoft.javakiva.Lender.toString(Lender.java:357)
-	at com.prashsoft.javakiva.UnitTests.testGetLendersByParams(UnitTests.java:169)
+	at com.prashsoft.javakiva.UnitTests.testLoansDetails(UnitTests.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,19 +330,60 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testAssertTrueIsNotFalse</td><td>0.001s</td><td class="success">passed</td>
+<td class="success">testAssertTrueIsNotFalse</td><td>0s</td><td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testAssertTrueIsTrue</td><td>0.003s</td><td class="success">passed</td>
+<td class="success">testAssertTrueIsTrue</td><td>0s</td><td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">testGetLendersByParams</td><td>21.295s</td><td class="failures">failed</td>
+<td class="failures">testGetLendersByParams</td><td>0.313s</td><td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testGetLoanJournalEntries</td><td>0.332s</td><td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetLoanLenders</td><td>3.814s</td><td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testGetLoansByParams</td><td>0.330s</td><td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testGetNewestLenders</td><td>22.626s</td><td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testGetNewestLoans</td><td>0.361s</td><td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testLoansDetails</td><td>0.358s</td><td class="failures">failed</td>
 </tr>
 </table>
 </div>
+<div class="tab" id="tab2">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Testing GetLoanLenders:
+Testing getLoanJournalEntries:
+Testing GetNewestLenders: 
+Testing Loan Details: 
+Testing GetLoansByParams:
+Testing Get Newest Loans
+</pre>
+</span>
+</div>
+<div class="tab" id="tab3">
+<h2>Standard error</h2>
+<span class="code">
+<pre>http://api.kivaws.org/v1/lenders/bev4971.json?app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+http://api.kivaws.org/v1/loans/55781.json?app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+http://api.kivaws.org/v1/loans/search.json?q=fishing&amp;status=in_repayment&amp;gender=female&amp;sector=food&amp;region=af&amp;country_code=mz&amp;partner=23&amp;sort_by=newest&amp;page=1&amp;app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+http://api.kivaws.org/v1/loans/newest.json?page=1&amp;app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+http://api.kivaws.org/v1/lenders/search.json?sort_by=newest&amp;page=11&amp;app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+</pre>
+</span>
+</div>
 </div>
 <div id="footer">
-<p>Generated by <a href="http://www.gradle.org/">Gradle 1.4</a> at Jul 23, 2014 9:33:10 PM</p>
+<p>Generated by <a href="http://www.gradle.org/">Gradle 1.4</a> at Jul 23, 2014 9:58:53 PM</p>
 </div>
 </div>
 </body>

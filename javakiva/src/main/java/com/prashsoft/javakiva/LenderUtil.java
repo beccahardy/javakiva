@@ -125,7 +125,7 @@ public class LenderUtil {
         return getLendersDetails(StringUtils.join(lenderIds, ','));
     }
 
-    public List getLendersFromBean(Object bean) {
+    public List<Lender> getLendersFromBean(Object bean) {
 
         if (!(PropertyUtils.isReadable(bean, "lenders")))
             return null;
@@ -135,19 +135,24 @@ public class LenderUtil {
         if (jsonLenders == null || jsonLenders.size() == 0)
             return null;
 
-        List lenders = new ArrayList();
+        List<Lender> lenders = new ArrayList<Lender>();
         JSONObject jsonObject;
         Lender lender;
-        Iterator lenderIter = jsonLenders.iterator();
+        // Iterator lenderIter = jsonLenders.iterator();
 
-        while (lenderIter.hasNext()) {
+        // while (lenderIter.hasNext()) {
+        for (Object jsonLender: jsonLenders){
 
-            jsonObject = JSONObject.fromObject(lenderIter.next());
+            jsonObject = JSONObject.fromObject(jsonLender);
             bean = JSONObject.toBean(jsonObject);
 
-            lender = getLenderDetails((String) KivaUtil.getBeanProperty(bean, "lender_id"));
-            lenders.add(lender);
-
+            // lender = getLenderDetails((String) KivaUtil.getBeanProperty(bean, "lender_id"));
+            // lenders.add(lender);
+            String lender_id = (String) KivaUtil.getBeanProperty(bean, "lender_id");
+            if (StringUtils.isNotBlank(lender_id)) {
+                lender = getLenderDetails(lender_id);
+                lenders.add(lender);
+            }
         }
         return lenders;
     }
