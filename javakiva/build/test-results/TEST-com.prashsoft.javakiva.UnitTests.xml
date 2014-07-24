@@ -1,16 +1,11 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<testsuite name="com.prashsoft.javakiva.UnitTests" tests="9" failures="5" errors="0" timestamp="2014-07-24T02:58:24" hostname="oneiroi" time="28.141">
+<testsuite name="com.prashsoft.javakiva.UnitTests" tests="7" failures="5" errors="0" timestamp="2014-07-24T03:05:42" hostname="oneiroi" time="2.285">
   <properties/>
-  <testcase name="testGetLoanLenders" classname="com.prashsoft.javakiva.UnitTests" time="3.814"/>
-  <testcase name="testGetLoanJournalEntries" classname="com.prashsoft.javakiva.UnitTests" time="0.332"/>
-  <testcase name="testGetNewestLenders" classname="com.prashsoft.javakiva.UnitTests" time="22.626">
+  <testcase name="testGetNewestLenders" classname="com.prashsoft.javakiva.UnitTests" time="0.711">
     <failure message="java.lang.IllegalArgumentException: No bean specified" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: No bean specified
 	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
 	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
-	at com.prashsoft.javakiva.LenderUtil.getLendersDetails(LenderUtil.java:102)
-	at com.prashsoft.javakiva.LenderUtil.getLendersDetails(LenderUtil.java:125)
-	at com.prashsoft.javakiva.LenderUtil.getLenderDetails(LenderUtil.java:76)
-	at com.prashsoft.javakiva.LenderUtil.getLendersFromBean(LenderUtil.java:153)
+	at com.prashsoft.javakiva.LenderUtil.getLendersFromBean(LenderUtil.java:130)
 	at com.prashsoft.javakiva.LenderUtil.getNewestLenders(LenderUtil.java:172)
 	at com.prashsoft.javakiva.LenderUtil.getNewestLenders(LenderUtil.java:161)
 	at com.prashsoft.javakiva.UnitTests.testGetNewestLenders(UnitTests.java:159)
@@ -54,7 +49,7 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <testcase name="testLoansDetails" classname="com.prashsoft.javakiva.UnitTests" time="0.358">
+  <testcase name="testLoansDetails" classname="com.prashsoft.javakiva.UnitTests" time="0.304">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.prashsoft.javakiva.UnitTests.testLoansDetails(UnitTests.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -97,7 +92,7 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <testcase name="testGetLoansByParams" classname="com.prashsoft.javakiva.UnitTests" time="0.33">
+  <testcase name="testGetLoansByParams" classname="com.prashsoft.javakiva.UnitTests" time="0.473">
     <failure message="java.lang.IllegalArgumentException: No bean specified" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: No bean specified
 	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
 	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
@@ -145,8 +140,8 @@
 </failure>
   </testcase>
   <testcase name="testAssertTrueIsTrue" classname="com.prashsoft.javakiva.UnitTests" time="0.0"/>
-  <testcase name="testAssertTrueIsNotFalse" classname="com.prashsoft.javakiva.UnitTests" time="0.0"/>
-  <testcase name="testGetNewestLoans" classname="com.prashsoft.javakiva.UnitTests" time="0.361">
+  <testcase name="testAssertTrueIsNotFalse" classname="com.prashsoft.javakiva.UnitTests" time="0.001"/>
+  <testcase name="testGetNewestLoans" classname="com.prashsoft.javakiva.UnitTests" time="0.322">
     <failure message="java.lang.IllegalArgumentException: No bean specified" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: No bean specified
 	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
 	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
@@ -194,7 +189,7 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <testcase name="testGetLendersByParams" classname="com.prashsoft.javakiva.UnitTests" time="0.313">
+  <testcase name="testGetLendersByParams" classname="com.prashsoft.javakiva.UnitTests" time="0.472">
     <failure message="java.lang.IllegalArgumentException: No bean specified" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: No bean specified
 	at org.apache.commons.beanutils.PropertyUtilsBean.isReadable(PropertyUtilsBean.java:1331)
 	at org.apache.commons.beanutils.PropertyUtils.isReadable(PropertyUtils.java:690)
@@ -241,14 +236,12 @@
 	at java.lang.Thread.run(Thread.java:744)
 </failure>
   </testcase>
-  <system-out><![CDATA[Testing GetLoanLenders:
-Testing getLoanJournalEntries:
-Testing GetNewestLenders: 
+  <system-out><![CDATA[Testing GetNewestLenders: 
 Testing Loan Details: 
 Testing GetLoansByParams:
 Testing Get Newest Loans
 ]]></system-out>
-  <system-err><![CDATA[http://api.kivaws.org/v1/lenders/bev4971.json?app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
+  <system-err><![CDATA[http://api.kivaws.org/v1/lenders/newest.json?page=1&app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
 http://api.kivaws.org/v1/loans/55781.json?app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
 http://api.kivaws.org/v1/loans/search.json?q=fishing&status=in_repayment&gender=female&sector=food&region=af&country_code=mz&partner=23&sort_by=newest&page=1&app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
 http://api.kivaws.org/v1/loans/newest.json?page=1&app_id=com.prashsoft.javakiva :: Method failed! : HTTP/1.1 403 Forbidden (Rate Limit Exceeded)
